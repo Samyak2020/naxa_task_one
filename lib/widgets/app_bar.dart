@@ -19,15 +19,15 @@ class AppBarWidget extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                IconButton(
-                  onPressed: () {},
-                  iconSize: 20.0,
-                  padding: EdgeInsets.only(right: mediaQuerySize.width * 0.1),
-                  icon: Icon(
-                    Icons.arrow_back_ios,
-                    color: kHeadlineColors,
-                  ),
-                ),
+                //IconButton(
+                //  onPressed: () {},
+                //  iconSize: 20.0,
+                //  padding: EdgeInsets.only(right: mediaQuerySize.width * 0.1),
+                //  icon: Icon(
+                //    Icons.arrow_back_ios,
+                //    color: kHeadlineColors,
+                //  ),
+                //),
                 // ),
                 SizedBox(height: mediaQuerySize.height * 0.007),
                 Padding(

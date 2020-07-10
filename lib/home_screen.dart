@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:naxa_task_one/list_of_items.dart';
+import 'package:naxa_task_one/utilities/constants.dart';
 import 'package:naxa_task_one/widgets/app_bar.dart';
 import 'package:naxa_task_one/widgets/bottom_nav_bar.dart';
 import 'package:naxa_task_one/widgets/chips_row.dart';
@@ -14,9 +15,19 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     var theme = Theme.of(context);
     return Scaffold(
+      extendBodyBehindAppBar: true,
       backgroundColor: theme.backgroundColor,
       resizeToAvoidBottomPadding: false,
       resizeToAvoidBottomInset: false,
+      appBar: AppBar(
+        elevation: 0.0,
+        leading: Icon(
+          Icons.arrow_back_ios,
+          color: kHeadlineColors,
+          size: 20.0,
+        ),
+        backgroundColor: Colors.transparent,
+      ),
       bottomNavigationBar: BtmNavBar(),
       body: Column(
         children: <Widget>[
